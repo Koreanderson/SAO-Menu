@@ -4,9 +4,24 @@
 	<meta charset="UTF-8">
 	<title>SAO Interface Test</title>
 	<link rel="stylesheet" href="assets/css/sao.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="assets/js/sao.js"></script>
 </head>
 <body>
 	<div class="css">
+		<ul id="menu">
+			<li class="item">
+				<a href="#">1</a>
+			</li>
+			<li class="item">
+				<a href="#">2</a>
+			</li>
+			<li class="item">
+				<a href="#">3</a>
+			</li>
+		</ul>
+	</div><!--/css-->
+	<div class="jquery">
 		<a id="trigger" href="#">Button</a>
 		<ul id="menu">
 			<li class="item">
@@ -18,17 +33,7 @@
 			<li class="item">
 				<a href="#">3</a>
 			</li>
-			<!--<li class="parent item">-->
-				<!--Sub-->
-				<!--<ul class="sub-menu">-->
-					<!--<li class="item">1</li>-->
-					<!--<li class="item">2</li>-->
-					<!--<li class="item">3</li>-->
-				<!--</ul>-->
-			<!--</li>-->
 		</ul>
-	</div><!--/css-->
-	<div class="jquery">
 
 	</div>
 </body>

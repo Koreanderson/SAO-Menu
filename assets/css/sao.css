@@ -10,11 +10,17 @@ body {
   margin: 0;
   padding: 0;
   background: url(../img/blurred_bg.jpg);
-  background-size: cover;
   font-family: 'Helvetica' ,sans-serif;
 }
 
 /* line 13, ../sass/sao.scss */
+.css, .jquery {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+/* line 18, ../sass/sao.scss */
 #trigger {
   background: #FFf;
   border-radius: 3px;
@@ -26,9 +32,8 @@ body {
   width: 300px;
 }
 
-/* line 23, ../sass/sao.scss */
-#menu {
-  display: block;
+/* line 29, ../sass/sao.scss */
+.css #menu {
   min-height: 110px;
   height: 110px;
   width: 100px;
@@ -39,8 +44,8 @@ body {
   padding: 0;
   opacity: 0.1;
 }
-/* line 35, ../sass/sao.scss */
-#menu .item {
+/* line 40, ../sass/sao.scss */
+.css #menu .item {
   background: rgba(255, 255, 255, 0.5);
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50px;
@@ -53,8 +58,8 @@ body {
   position: absolute;
   top: 0;
 }
-/* line 48, ../sass/sao.scss */
-#menu .item a {
+/* line 53, ../sass/sao.scss */
+.css #menu .item a {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 41px;
   color: #f1f1f1;
@@ -66,30 +71,65 @@ body {
   width: 80px;
   text-decoration: none;
 }
-/* line 61, ../sass/sao.scss */
-#menu:hover {
+/* line 66, ../sass/sao.scss */
+.css #menu:hover {
   opacity: 1;
-  height: 550px;
 }
-/* line 65, ../sass/sao.scss */
-#menu:hover .item:first-child {
+/* line 69, ../sass/sao.scss */
+.css #menu:hover .item:first-child {
+  -webkit-transition: all .3s ease-in-out;
+}
+/* line 72, ../sass/sao.scss */
+.css #menu:hover .item:nth-child(2) {
   -webkit-transition: all .3s ease-in-out;
   -webkit-transition-delay: .07s;
-  top: 160px;
+  top: 150px;
 }
-/* line 70, ../sass/sao.scss */
-#menu:hover .item:nth-child(2) {
+/* line 77, ../sass/sao.scss */
+.css #menu:hover .item:nth-child(3) {
   -webkit-transition: all .3s ease-in-out;
-  -webkit-transition-delay: .05s;
   top: 300px;
 }
-/* line 75, ../sass/sao.scss */
-#menu:hover .item:nth-child(3) {
-  -webkit-transition: all .3s ease-in-out;
-  top: 440px;
-}
 
-/* line 81, ../sass/sao.scss */
-.sub-menu {
+/* line 86, ../sass/sao.scss */
+.jquery #menu {
   display: none;
+  min-height: 110px;
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0;
+  opacity: 0.1;
+}
+/* line 97, ../sass/sao.scss */
+.jquery #menu .item {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  display: block;
+  margin: 10px 0;
+  width: 100px;
+  height: 100px;
+  padding: 8px 0;
+  text-align: center;
+  position: relative;
+  top: 0;
+  -webkit-transition: all .3s ease-in-out;
+}
+/* line 111, ../sass/sao.scss */
+.jquery #menu .item a {
+  background: rgba(255, 255, 255, 0.3);
+  background: red;
+  border-radius: 41px;
+  color: #f1f1f1;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto;
+  height: 80px;
+  width: 80px;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
 }

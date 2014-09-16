@@ -1,5 +1,9 @@
 $(document).ready(function(){
-	$('#trigger').click(function(){
-		$()
-	}
+	$('.jquery #trigger').click(function(){
+		$('.jquery #menu').slideToggle('fast', function(){
+			// Slide Animation Complete
+		});
+		$('.jquery #menu li').css();
+	});
 });
+
