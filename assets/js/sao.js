@@ -1,9 +1,15 @@
 $(document).ready(function(){
-	$('.jquery #trigger').click(function(){
-		$('.jquery #menu').slideToggle('fast', function(){
-			// Slide Animation Complete
-		});
-		$('.jquery #menu li').css();
-	});
-});
+	$('.wrapper #trigger').click(function(){
+		$('.wrapper #menu').toggleClass('open');
+    });
 
+	$(".wrapper").swipe( {
+        swipeDown:function(event, direction, distance, duration, fingerCount) {
+          $('#menu').addClass('open');  
+        },
+        swipeUp:function(event, direction, distance, duration, fingerCount) {
+          $('#menu').removeClass('open');  
+		},
+        threshold:0
+     });
+});
