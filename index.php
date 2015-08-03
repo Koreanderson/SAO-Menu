@@ -3,8 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SAO Interface Test</title>
-	<link rel="stylesheet" href="assets/css/sao.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/main.css">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="assets/js/jquery.touchSwipe.js"></script>
 	<script src="assets/js/sao.js"></script>
